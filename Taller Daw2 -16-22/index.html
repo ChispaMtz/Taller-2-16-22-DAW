@@ -37,10 +37,10 @@
 <legend>Combos e ingredientes</legend>
 <p>Combos de pollo:
     <center>
-<label><input type="checkbox" name="size" value="7.25" checked="checked"
+<label><input type="radio" name="size" value="7.25" checked="checked"
 />SuperCombo</label>
-<label><input type="checkbox" name="size" value="5.75" />Combo Personal</label>
-<label><input type="checkbox" name="size" value="3.50" />Combo infantil</label>
+<label><input type="radio" name="size" value="5.75" />Combo Personal</label>
+<label><input type="radio" name="size" value="3.50" />Combo infantil</label>
 <input type="hidden" name="sz_tot" value="0.00" />
 </p></center>
 <center>
@@ -92,7 +92,7 @@ readonly="readonly" />
         <label>Comentario</label>
         <textarea id="comment" class="form-control"></textarea></label>
         </div>
-        <button type="button" class="btn btn-primary" onclick="commentBox();">Enviar</button>
+        <button type="button" class="btn btn-primary" onclick="commentBox();"  onclick="clearInterval()">Enviar</button>
     </form>
 </div>
 
